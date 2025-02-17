@@ -9,43 +9,43 @@ import geemap.foliumap as geemap
 import ee
 ee.Authenticate()
 
-load_dotenv()
-os.environ['LANGCHAIN_TRACING_V2'] = os.getenv('LANGCHAIN_TRACING_V2')
-os.environ['LANGCHAIN_ENDPOINT'] = os.getenv("LANGCHAIN_ENDPOINT")
-os.environ['LANGCHAIN_API_KEY'] = os.getenv("LANGCHAIN_API_KEY")
-os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
-creds = {
-    "type": os.getenv("type"),
-    "project_id": os.getenv("project_id"),
-    "private_key_id": os.getenv("private_key_id"),
-    "private_key": os.getenv("private_key"),
-    "client_email": os.getenv("client_email"),
-    "client_id": os.getenv("client_id"),
-    "auth_uri": os.getenv("auth_uri"),
-    "token_uri": os.getenv("token_uri"),
-    "auth_provider_x509_cert_url": os.getenv("auth_provider_x509_cert_url"),
-    "client_x509_cert_url": os.getenv("client_x509_cert_url"),
-    "universe_domain": os.getenv("universe_domain"),
-}
-
-
-# os.environ['LANGCHAIN_TRACING_V2'] = st.secrets["LANGCHAIN_TRACING_V2"]
-# os.environ['LANGCHAIN_ENDPOINT'] = st.secrets["LANGCHAIN_ENDPOINT"]
-# os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
-# os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
+# load_dotenv()
+# os.environ['LANGCHAIN_TRACING_V2'] = os.getenv('LANGCHAIN_TRACING_V2')
+# os.environ['LANGCHAIN_ENDPOINT'] = os.getenv("LANGCHAIN_ENDPOINT")
+# os.environ['LANGCHAIN_API_KEY'] = os.getenv("LANGCHAIN_API_KEY")
+# os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
 # creds = {
-#     "type": st.secrets["type"],
-#     "project_id": st.secrets["project_id"],
-#     "private_key_id": st.secrets["private_key_id"],
-#     "private_key": st.secrets["private_key"],
-#     "client_email": st.secrets["client_email"],
-#     "client_id": st.secrets["client_id"],
-#     "auth_uri": st.secrets["auth_uri"],
-#     "token_uri": st.secrets["token_uri"],
-#     "auth_provider_x509_cert_url": st.secrets["auth_provider_x509_cert_url"],
-#     "client_x509_cert_url": st.secrets["client_x509_cert_url"],
-#     "universe_domain": st.secrets["universe_domain"]
-#     }
+#     "type": os.getenv("type"),
+#     "project_id": os.getenv("project_id"),
+#     "private_key_id": os.getenv("private_key_id"),
+#     "private_key": os.getenv("private_key"),
+#     "client_email": os.getenv("client_email"),
+#     "client_id": os.getenv("client_id"),
+#     "auth_uri": os.getenv("auth_uri"),
+#     "token_uri": os.getenv("token_uri"),
+#     "auth_provider_x509_cert_url": os.getenv("auth_provider_x509_cert_url"),
+#     "client_x509_cert_url": os.getenv("client_x509_cert_url"),
+#     "universe_domain": os.getenv("universe_domain"),
+# }
+
+
+os.environ['LANGCHAIN_TRACING_V2'] = st.secrets["LANGCHAIN_TRACING_V2"]
+os.environ['LANGCHAIN_ENDPOINT'] = st.secrets["LANGCHAIN_ENDPOINT"]
+os.environ['LANGCHAIN_API_KEY'] = st.secrets["LANGCHAIN_API_KEY"]
+os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
+creds = {
+    "type": st.secrets["type"],
+    "project_id": st.secrets["project_id"],
+    "private_key_id": st.secrets["private_key_id"],
+    "private_key": st.secrets["private_key"],
+    "client_email": st.secrets["client_email"],
+    "client_id": st.secrets["client_id"],
+    "auth_uri": st.secrets["auth_uri"],
+    "token_uri": st.secrets["token_uri"],
+    "auth_provider_x509_cert_url": st.secrets["auth_provider_x509_cert_url"],
+    "client_x509_cert_url": st.secrets["client_x509_cert_url"],
+    "universe_domain": st.secrets["universe_domain"]
+    }
 
 
 credentials = ee.ServiceAccountCredentials(
