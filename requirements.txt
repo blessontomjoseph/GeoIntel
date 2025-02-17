@@ -6,4 +6,3 @@ openai
 geemap
 earthengine-api
 langchain_openai
-pkg_resources
