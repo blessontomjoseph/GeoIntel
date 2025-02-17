@@ -5,3 +5,4 @@ langchain-core
 openai
 geemap
 earthengine-api
+langchain_openai
