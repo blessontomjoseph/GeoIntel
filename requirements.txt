@@ -6,3 +6,4 @@ openai
 geemap
 earthengine-api
 langchain_openai
+folium
