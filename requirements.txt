@@ -1,9 +1,9 @@
 python-dotenv
-streamlit
-langchain
-langchain-core
-openai
-geemap
-earthengine-api
-langchain_openai
-folium
+streamlit==1.42.0
+streamlit_folium==0.24.0
+langchain==0.3.3
+langchain-core==0.3.29
+langchain-openai==0.2.2
+openai==1.50.2
+geemap==0.35.1
+earthengine-api==1.5.0
