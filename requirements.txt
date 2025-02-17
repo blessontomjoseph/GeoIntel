@@ -1,0 +1,7 @@
+python-dotenv
+streamlit
+langchain
+langchain-core
+openai
+geemap
+earthengine-api
