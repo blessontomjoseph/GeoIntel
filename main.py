@@ -6,7 +6,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 # import geemap
 import geemap.foliumap as geemap
 import ee
-ee.Authenticate()
+# ee.Authenticate()
 
 # load_dotenv()
 # os.environ['LANGCHAIN_TRACING_V2'] = os.getenv('LANGCHAIN_TRACING_V2')
