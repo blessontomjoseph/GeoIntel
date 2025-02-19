@@ -56,4 +56,4 @@ if __name__=="__main__":
             
     except:
         with st.chat_message("bot"):
-            st.write(user_input)
+            st.write("please type a valid input")

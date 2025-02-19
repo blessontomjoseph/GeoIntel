@@ -1,3 +1,4 @@
+# from dotenv import load_dotenv
 import os
 import streamlit as st
 from langchain_openai import ChatOpenAI
@@ -119,7 +120,7 @@ def extract_meta_data(user_input):
 
 2. **Start Date**: Identify the starting date or time period mentioned in the query (e.g., "January 2025", "2020"). Convert dates into `yyyy-mm-dd` format, assuming the start of the year (`yyyy-01-01`) if the exact date is not specified.
 
-3. **End Date**: Identify the ending date or time period mentioned in the query (e.g., "2023"). If no end date is mentioned, assume it is the same as the start date.
+3. **End Date**: Identify the ending date or time period mentioned in the query (e.g., "2023"). If no end date is mentioned, assume it is the end of the year start year, like yyyy-12-31. where, yyyy is the start year
 
 ### Example Queries & Expected Output
 
